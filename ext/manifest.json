@@ -1,0 +1,25 @@
+{
+    "name": "카카페 사용 캐시 확인",
+    "description": "내가 쓴 캐시는 얼마일까?",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "https://page.kakao.com/store/charging_history"
+            ]
+        }
+    ]
+}
