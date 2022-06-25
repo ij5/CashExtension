@@ -13,6 +13,7 @@ let cash = {
 
 let num = setInterval(() => {
     let list = document.getElementsByClassName("ReactVirtualized__Grid__innerScrollContainer");
+    if(!list[0]) return;
     if (list[0].childNodes.length === 0) {
         return;
     }
